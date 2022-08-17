@@ -6,7 +6,7 @@ let ramens = []
 const ramenMenu = document.querySelector("#ramen-menu")
 
 
-//run app
+//run app / function invocation
 //1
 fetchRamen()
 //2
@@ -15,6 +15,8 @@ listenMenu()
 
 
 //1 fetch GET request 
+
+//function declaration
 function fetchRamen(){
     fetch("http://localhost:3000/ramens")
         .then(resp => resp.json())
@@ -80,7 +82,7 @@ const newRamenImageInput = document.querySelector("#new-ramen>#new-image")
 const newRamenRatingInput = document.querySelector("#new-ramen>#new-rating")
 const newRamenCommentInput = document.querySelector("#new-ramen>#new-comment")
 
-//run the function
+//invoke the function
 listenNewRamenForm()
 
 function listenNewRamenForm(){
