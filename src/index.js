@@ -62,6 +62,7 @@ function listenMenu(){
     })
 }
 
+
 function setRamenDetailsById(id){
     // console.log(typeof(id))
     const selected = ramens.find(r => r.id === parseInt(id))
