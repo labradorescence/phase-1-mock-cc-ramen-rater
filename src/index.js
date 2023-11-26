@@ -105,15 +105,15 @@ ramenForm.addEventListener("submit", (event) => {
         "comment": newRamenComment.value
     }
 
-    console.log(newRamen)
-
     displayRamenMenu(newRamen)
 
-    event.target["new-name"].value = "" 
-    event.target["new-restaurant"].value = ""
-    event.target["new-image"].value = ""
-    event.target["new-rating"].value = ""
-    event.target["new-comment"].value = ""
+    // event.target["new-name"].value = "" 
+    // event.target["new-restaurant"].value = ""
+    // event.target["new-image"].value = ""
+    // event.target["new-rating"].value = ""
+    // event.target["new-comment"].value = ""
+
+    ramenForm.reset()
 })
 
 //function invocation
